@@ -9,7 +9,6 @@ def help(message: telebot.types.Message):
 <количество первой валюты> \
     \nСписок доступных валют:/values'
     bot.reply_to(message, text)
-
 @bot.message_handler(commands=['values'])
 def values(message: telebot.types.Message):
     text = 'Доступные валюты:'
