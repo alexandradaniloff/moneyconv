@@ -3,7 +3,6 @@ from config import keys, TOKEN
 from extensions import Convertionexception, CryptoConverter
 
 bot = telebot.TeleBot(TOKEN)
-
 @bot.message_handler(commands=['start', 'help'])
 def help(message: telebot.types.Message):
     text = 'Введите команду боту в формате:\n<имя валюты, цену которой необходимо узнать> <имя валюты, в которой надо узнать цену первой валюты> \
